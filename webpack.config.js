@@ -24,18 +24,20 @@ module.exports = {
                 }
             },
             {
-                test: /\.(eot|svg|ttf|woff|woff2)$/,
-                loader: 'file?name=fonts/[name].[ext]'
-            }
-        ],
-
-        rules: [
-            {
                 test: /\.scss$/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
                     use: ['css-loader', 'sass-loader']
                 })
+            },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                loader: 'file?name=fonts/[name].[ext]'
+            },
+            {
+                test: /\.(png|jpg|gif)$/,
+                // include: path.join(__dirname, 'images'),
+                loader: 'url-loader?limit=1000000'
             }
         ]
     },

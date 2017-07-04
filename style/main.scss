@@ -1,6 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
 @import "reset";
 @import "grid";
+
+header {
+  height: 80px;
+  margin-bottom: 170px;
+}
+
+#home{
+  background-image: url(../images/background.png);
+  margin: 0 auto;
+  height: 800px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.nav {
+  color: white;
+  float: right;
+  font-size: 14px;
+  margin-top: 27px;
+}
 
 .animateIntro {
   height: 100%;
