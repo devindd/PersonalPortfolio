@@ -2,64 +2,36 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:500');
 @import "reset";
 @import "grid";
+@import "menu";
+//@import "intro";
 
 header {
   height: 80px;
-  margin-bottom: 170px;
+
 }
 
 #home{
-  background-image: url(../images/background.png);
+  background: url(https://pp.userapi.com/c841122/v841122831/327e/nHt-92F6yc4.jpg) no-repeat top center #efeff1;
   margin: 0 auto;
-  height: 800px;
-}
-
-a{
-  color: white;
-  text-decoration: none;
-}
-
-.nav {
-  color: white;
-  float: right;
-  font-size: 14px;
-  margin-top: 27px;
-}
-
-.animateIntro {
-  height: 100%;
-  text-align: center;
-  z-index: 2000;
-}
-
-div#load_screen {
-  background: #fff;
-  opacity: 1;
-  position: fixed;
-  z-index: 10;
-  top: 0px;
   width: 100%;
-  height: 100%;
+  height: 1000px;
+  background-size: cover;
 }
 
-div#load_screen > div#loading {
-  position: relative;
-  top: 0;
-  text-align: center;
-  margin: 100px auto;
+
+.logo img{
+  margin-top: 20px;
+  border-radius: 30px;
+  width: 340px;
+  height: auto;
 }
 
-#pre_title {
-  opacity: 0;
-  position: relative;
-  letter-spacing: 40px;
-  left: 15px;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
-}
-
-.site {
-  height: 500px;
-  width: 100%;
-  background-color: red;
+@media only screen and (max-width: 640px){
+  .logo img{
+    border-radius: 10px;
+    float: left;
+    width: 25%;
+    height: 25%;
+    margin-left: 20px;
+  }
 }
