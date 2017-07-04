@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+@import "reset";
+@import "grid";
+
+.animateIntro {
+  height: 100%;
+  text-align: center;
+  z-index: 2000;
+}
+
+div#load_screen {
+  background: #fff;
+  opacity: 1;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+div#load_screen > div#loading {
+  position: relative;
+  top: 0;
+  text-align: center;
+  margin: 100px auto;
+}
+
+#pre_title {
+  opacity: 0;
+  position: relative;
+  letter-spacing: 40px;
+  left: 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+}
+
+.site {
+  height: 500px;
+  width: 100%;
+  background-color: red;
+}
