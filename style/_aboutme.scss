@@ -1,0 +1,38 @@
+#aboutme{
+  background: rgba(255, 255, 255, 0.2);
+  height: 100%;
+  text-align: center;
+}
+
+.leftbox span{
+  margin-bottom: 1000px;
+  font-family: 'Oswald';
+  font-size: 40px;
+  text-align: center;
+  color: #FDCD3B;
+}
+
+.leftbox p{
+  font-size: 20px;
+  margin-top: 15px;
+  padding-left: 150px;
+  padding-right: 150px;
+
+}
+
+@media only screen and (max-width: 640px){
+  .leftbox p {
+    font-size: 15px;
+  }
+  .leftbox span{
+    font-size: 30px;
+  }
+}
+
+.leftbox{
+  font-family: 'Quicksand';
+  color:#2A2324;
+  margin-top: 15px;
+  float:left;
+  margin-bottom: 30px;
+}

@@ -1,21 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300');
 @import url('https://fonts.googleapis.com/css?family=Oswald:500');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import "reset";
 @import "grid";
 @import "menu";
+@import "photo";
+@import "aboutme";
+@import "counter";
 //@import "intro";
+
+body{
+  background: url(../images/background.png) no-repeat top center #efeff1;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 header {
   height: 80px;
-
 }
 
 #home{
-  background: url(https://pp.userapi.com/c841122/v841122831/327e/nHt-92F6yc4.jpg) no-repeat top center #efeff1;
   margin: 0 auto;
   width: 100%;
-  height: 1000px;
-  background-size: cover;
 }
 
 
@@ -33,5 +39,40 @@ header {
     width: 25%;
     height: 25%;
     margin-left: 20px;
+  }
+}
+
+#quote{
+  background: rgba(255, 255, 255, 0.2);
+
+}
+
+.textbox p{
+  font-family: 'Indie Flower';
+  font-size: 2em;
+  text-align: center;
+  color: #2A2324;
+  padding-top: 30px;
+}
+
+.textbox span{
+  color: #FDCD3B;
+}
+
+.textbox span1{
+  font-family: 'Indie Flower';
+  font-size: 1.5em;
+  float: right;
+  margin-right: 100px;
+  color: #2A2324;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 640px){
+  .textbox p{
+    font-size: 15px;
+  }
+  .textbox span1{
+    font-size: 18px;
   }
 }

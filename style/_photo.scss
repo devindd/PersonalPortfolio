@@ -1,0 +1,50 @@
+.photocontainer {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-reveal {
+  position: relative;
+}
+
+.under-slide {
+  position: relative;
+  overflow: hidden;
+  padding-top: 41%;
+  top: 0;
+  left: 0;
+  background: url("https://assets.dunkleedev.com/codepen/image-revealer-1.jpg")
+    no-repeat;
+  background-size: cover;
+}
+
+.over-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translateX(0px);
+  overflow: hidden;
+}
+
+.over-image {
+  height: 100%;
+  width: 100%;
+  background: url("https://assets.dunkleedev.com/codepen/image-revealer-2.jpg")
+    no-repeat;
+  background-size: cover;
+  -webkit-transform: translateX(0px);
+}
+
+.divider {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  margin-left: -2px;
+  background-color: #FDCD3B;
+}
