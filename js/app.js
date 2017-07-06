@@ -106,11 +106,18 @@ $.fn.jQuerySimpleCounter = function( options ) {
 		});
 	};
 
-
 setTimeout(function(){$('#number1').jQuerySimpleCounter({end: 12,duration: 7000})}, 6500);
 setTimeout(function(){$('#number2').jQuerySimpleCounter({end: 55,duration: 7000})}, 6500);
 setTimeout(function(){$('#number3').jQuerySimpleCounter({end: 359,duration: 7000})}, 6500);
 setTimeout(function(){$('#number4').jQuerySimpleCounter({end: 246,duration: 7000})}, 6500);
+
+// Hover in portfolio
+
+$(".hover").mouseleave(
+  function() {
+    $(this).removeClass("hover");
+  }
+);
 
 
 });

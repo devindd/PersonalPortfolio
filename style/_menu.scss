@@ -19,7 +19,7 @@
   margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 320px){
   .nav {
     float: right;
     margin-right: 20px;
@@ -81,7 +81,7 @@
 }
 
 @for $i from 1 through 6 {
-  .nav a:nth-child(#{$i}){
+  .nav a:nth-child(#{$i}),{
     animation: show 0.2s 6.2s ease 1 both;
   }
  }
