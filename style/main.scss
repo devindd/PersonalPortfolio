@@ -9,7 +9,8 @@
 @import "counter";
 @import "offer";
 @import "portfolio";
-//@import "intro";
+@import "contact";
+@import "intro";
 
 body{
   background: url(../images/background.png) no-repeat top center #efeff1;
@@ -77,4 +78,25 @@ header {
   .textbox span1{
     font-size: 18px;
   }
+}
+
+footer {
+  height: 30px;
+  background-color: #2A2324;
+  text-align: center;
+
+
+}
+
+footer p{
+  margin:5px;
+  font-size: 15px;
+  color: #FDCD3B;
+  font-family: 'Quicksand';
+  display: inline-block;
+}
+
+footer i{
+  font-size: 15px;
+  color: rgb(210, 19, 19);
 }

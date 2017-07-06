@@ -1,5 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+  $(document).on('click', 'a', function(event){
+  		var diff = 0;
+  		if (window.innerWidth < 640) {
+  			diff = 300;
+  		} else {
+  			diff = 0;
+  		}
+  		event.preventDefault();
+  		var scrollto=$($(this).attr('href')).offset().top-diff;
+  		$('body,html').animate({
+  			scrollTop: scrollto
+  		}, 800);
+  	});
+    
 // ANIMATE MENU
   $(function() {
     setTimeout(function() {
@@ -118,6 +132,86 @@ $(".hover").mouseleave(
     $(this).removeClass("hover");
   }
 );
+
+// Portfolio choosing category
+  //var allImg = $(".photo").find("img");
+  var allPics = $(".photo");
+	var logotypesPics = $(".logotypes");
+	var photomaniPics = $(".photomanipulations");
+	var otherPics = $(".othergraphics");
+  var websitesPics = $(".websites");
+
+	var allBtn = $(".allBtn");
+	var logotypesBtn = $(".logotypesBtn");
+	var photomanipulationsBtn = $(".photomanipulationsBtn");
+	var othergraphicsBtn = $(".othergraphicsBtn");
+	var websitesBtn = $(".websitesBtn")
+
+  var fullScreen = $(".fullScreen");
+	var closeBtn = $(".fullScreenClose")
+
+	logotypesBtn.on("click", function(){
+		allPics.hide();
+		logotypesPics.fadeIn();
+    websitesBtn.css("color", "")
+    logotypesBtn.css("color", "#FDCD3B")
+    photomanipulationsBtn.css("color", "")
+    othergraphicsBtn.css("color", "")
+    allBtn.css("color", "")
+	})
+
+	photomanipulationsBtn.on("click", function(){
+		allPics.hide();
+		photomaniPics.fadeIn();
+    websitesBtn.css("color", "")
+    logotypesBtn.css("color", "")
+    photomanipulationsBtn.css("color", "#FDCD3B")
+    othergraphicsBtn.css("color", "")
+    allBtn.css("color", "")
+	})
+
+	othergraphicsBtn.on("click", function(){
+		allPics.hide();
+		otherPics.fadeIn();
+    websitesBtn.css("color", "")
+    logotypesBtn.css("color", "")
+    photomanipulationsBtn.css("color", "")
+    othergraphicsBtn.css("color", "#FDCD3B")
+    allBtn.css("color", "")
+	})
+
+	websitesBtn.on("click", function(){
+    allPics.hide();
+		websitesPics.fadeIn();
+    websitesBtn.css("color", "#FDCD3B")
+    logotypesBtn.css("color", "")
+    photomanipulationsBtn.css("color", "")
+    othergraphicsBtn.css("color", "")
+    allBtn.css("color", "")
+	})
+
+  allBtn.on("click", function(){
+		allPics.fadeIn();
+    websitesBtn.css("color", "")
+    logotypesBtn.css("color", "")
+    photomanipulationsBtn.css("color", "")
+    othergraphicsBtn.css("color", "")
+    allBtn.css("color", "#FDCD3B")
+	})
+
+  allPics.on("click", function(event){
+		var toAppend = $(event.target.parentElement.querySelector("img")).clone();
+		fullScreen.find(".picContainer").append(toAppend);
+		fullScreen.fadeIn();
+		fullScreen.removeClass("hidden");
+	})
+
+	closeBtn.on("click", function(){
+		var child = fullScreen.find(".picContainer");
+		child.empty();
+		fullScreen.fadeOut();
+		fullScreen.addClass("hidden");
+	})
 
 
 });

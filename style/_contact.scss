@@ -1,0 +1,58 @@
+#contact{
+  text-align: center;
+}
+
+.sectiontitleContact {
+  background-position: center;
+  margin: 0px 0 0px;
+  text-align: center;
+  min-height: 20px;
+}
+
+.sectiontitleContact h2 {
+  font-size: 30px;
+  color: #2A2324;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: 'Oswald';
+  padding-top: 40px;
+}
+
+.headerLineContact{
+  width: 160px;
+  height: 2px;
+  display: inline-block;
+  background: #FDCD3B;
+
+}
+
+.sectiontitleContact p {
+  font-family: 'Quicksand';
+  font-size: 20px;
+  color:#2A2324;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.sectiontitleContact p1 {
+  font-family: 'Quicksand';
+  font-size: 30px;
+  color:#2A2324;
+  padding-bottom: 30px;
+}
+
+.sectiontitleContact i {
+  font-size: 50px;
+  color:#2A2324;
+  padding-bottom: 30px;
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.sectiontitleContact i:hover{
+  color: rgba(42, 35, 36, 0.5);
+}
+
+.sectiontitleContact i:active{
+  color: #FDCD3B;
+}
