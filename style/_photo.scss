@@ -14,7 +14,7 @@
   padding-top: 41%;
   top: 0;
   left: 0;
-  background: url("https://assets.dunkleedev.com/codepen/image-revealer-1.jpg")
+  background: url(../images/left.png)
     no-repeat;
   background-size: cover;
 }
@@ -32,9 +32,9 @@
 .over-image {
   height: 100%;
   width: 100%;
-  background: url("https://assets.dunkleedev.com/codepen/image-revealer-2.jpg")
+  background: url(../images/right.png)
     no-repeat;
-  background-size: cover;
+background-size: cover;
   -webkit-transform: translateX(0px);
 }
 

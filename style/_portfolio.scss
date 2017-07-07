@@ -5,6 +5,12 @@
 
 }
 
+.center p{
+  text-align: center;
+  bottom: -100px;
+  color: red;
+}
+
 .photo {
   color: #2A2324;
   display: inline-block;
@@ -14,12 +20,13 @@
   margin-left: 18.333px;
   margin-top: 18.333px;
   margin-bottom: 18.333px;
-  max-width: 30%;
-  min-width: 30%;
+  // max-width: 30%;
+  // min-width: 30%;
   overflow: hidden;
   position: relative;
   text-align: left;
-  width: 100%;
+  width: 330px;
+  height: 240px;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   float: left;
