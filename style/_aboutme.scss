@@ -35,8 +35,10 @@
 
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 640px){
   .leftbox p {
+    padding-left: 25px;
+    padding-right: 25px;
     font-size: 15px;
   }
   .leftbox span{

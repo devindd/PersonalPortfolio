@@ -2,8 +2,14 @@
   background: rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
   vertical-align: middle;
-
 }
+
+#portfolio a{
+  width: 330px;
+  height: 240px;
+  z-index: 50000;
+}
+
 
 .center p{
   text-align: center;
@@ -220,10 +226,15 @@
   margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 640px){
   .folionav {
     float: right;
     margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .photo {
+    margin-left: 40px;
   }
 
 }
